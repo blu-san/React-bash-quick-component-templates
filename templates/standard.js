@@ -7,7 +7,7 @@ class MyComponent extends React.Component {
     }
     render() {
         return (
-            <h1>{/* Replace me! */}</h1>
+            <h1>{/* replace me! */}</h1>
         );
     }
 }
