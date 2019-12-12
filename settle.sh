@@ -12,6 +12,11 @@ fi
 read -p "What components you wish to create?: " -a c
 cur=$(pwd)
 read -p "Path directory: (current is $cur) " p
+if [ ! -d $p ] 
+then
+  echo "Directory does not exist"
+  exit
+fi
 for component in ${c[@]}
 do
   new=$p/$component

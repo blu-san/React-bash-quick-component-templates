@@ -13,7 +13,6 @@ bash PATH/settle.sh [MODE]
 - basic (functional component)
 - standard (class component, constructor method, render method)
 - sophisticated (class component, constructor method, render method, lifecycle methods, empty state object)
-
 # Prompts
 1. Component/s names 
 ```console
@@ -26,3 +25,10 @@ What components you wish to create?: MyComponent01 MyComponent02 MyComponent03
 ```console
 Path directory: (current is ~/home/path): ./src 
 ```
+# Incorrect input handling
+```console
+No valid argument has been passed # will be outputed into the console if no valid mode argument has been provided
+``` 
+```console
+Directory does not exist # will be outputed into the console if the provided path is not correct
+``` 
