@@ -8,7 +8,9 @@ class MyComponent extends React.Component {
     }
     render() {
         return (
-            <h1>{/* replace me! */}</h1>
+            <div class="MyComponent">
+                <h1>{/* replace me! */}</h1>
+            </div>
         );
     }
     componentDidMount() {
