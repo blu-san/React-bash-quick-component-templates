@@ -10,9 +10,9 @@ alias s='bash PATH/settle.sh'
 bash PATH/settle.sh [MODE]
 ```
 ### modes:
-- basic (functional component)
-- standard (class component, constructor method, render method)
-- sophisticated (class component, constructor method, render method, lifecycle methods, empty state object)
+- basic [functional component]
+- standard [class component, constructor method, render method, style sheet]
+- soph (sophisticated) [class component, constructor method, render method, lifecycle methods, empty state object, style sheet]
 # Prompts
 1. Component/s names 
 ```bash
