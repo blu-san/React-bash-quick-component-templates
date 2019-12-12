@@ -22,9 +22,14 @@ do
   new=$p/$component
   # make directory and put necessary files into it
   mkdir $new
-  touch $new/$component.js $new/$component.css
+  if [[ $mode != "basic" ]]
+  then  
+    touch $new/$component.css
+    cp `dirname "$0"`/templates/style.css $new/$component.css
+  fi
+  touch $new/$component.js
   cp `dirname "$0"`/templates/$mode.js $new/$component.js
   # rename the class name
-  sed -i "s/MyComponent/$component/g" $new/$component.js
+  sed -i "s/MyComponent/$component/g" $new/$component.js $new/$component.css 2>/dev/null
   echo "$component template has been settled in $new"
 done
